@@ -1,3 +1,3 @@
-print("hello world")
-print("added from feature branch")
-print("also added from feature branch")
+def printer():
+    print("hello world")
+    print("added from feature branch")
