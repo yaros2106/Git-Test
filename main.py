@@ -1,7 +1,7 @@
 def printer():
     print("hello max!")
     print("added from feature branch")
-    print("something else")
+    print("yaros")
 
 
 if __name__ == '__main__':
