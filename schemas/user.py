@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from pydantic import BaseModel, StringConstraints
+from pydantic import BaseModel, StringConstraints, EmailStr
 from typing import Annotated
 
 
@@ -10,3 +10,4 @@ class UserSchema(BaseModel):
         str,
         StringConstraints(min_length=3, max_length=32),
     ]
+    email: EmailStr | None = None
