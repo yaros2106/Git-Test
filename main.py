@@ -1,6 +1,12 @@
-def main():
-    print("Hello World")
+from fastapi import FastAPI
+from starlette.responses import HTMLResponse
+
+app = FastAPI()
 
 
-if __name__ == '__main__':
-    main()
+@app.get(
+    "/",
+    response_class=HTMLResponse,
+)
+def root() -> str:
+    return "<h1>Hello yaros</h1>"
