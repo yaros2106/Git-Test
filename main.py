@@ -9,6 +9,6 @@ app = FastAPI()
     response_class=HTMLResponse,
 )
 def root(
-    name: str,
+    name: str = "World",
 ) -> str:
-    return "<h1>Hello yaros</h1>"
+    return f"<h1>Hello {name}</h1>"
