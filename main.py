@@ -8,5 +8,7 @@ app = FastAPI()
     "/",
     response_class=HTMLResponse,
 )
-def root() -> str:
+def root(
+    name: str,
+) -> str:
     return "<h1>Hello yaros</h1>"
